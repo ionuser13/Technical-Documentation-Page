@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>HTML Basic Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>HTML Documentation</header>
+        <ul class="nav-list">
+          <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+          <li><a href="#Elements" class="nav-link">Elements</a></li>
+          <li><a href="#Anatomy_of_a_HTML_Document" class="nav-link">Anatomy of a HTML Document</a></li>
+          <li><a href="#Images" class="nav-link">Images</a></li>
+          <li><a href="#Links" class="nav-link">Links</a></li>
+          <li><a href="#Lists" class="nav-link">Lists</a></li>
+          <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+            <p>HTML stands for HyperText Markup Language. It is a markup language that defines the structure of the content. It consists of a series of elements used to enclose different parts of the content so that they look or behave in a certain way. Enclosure tags play an important role here. Along with this technology, other technologies are used, mainly CSS and JavaScript. </p>
+            <p>"Hypertext" refers to links that connect web pages to one another, either within a single web site or between web sites. These are a fundamental aspect of the Web.</p>
+            <p>HTML uses markup to tag content to be displayed in the web browser. These marks contain elements, some of which we will see on this page.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Elements">
+          <header>Elements</header>
+          <article>
+            <p>See this paragraph:</p>
+            <pre>
+              <code>< p class="feelings">I love cats < / p></code>
+            </pre>
+            <p>The parts of this element consist of:</p>
+            <ol>
+              <li><span class="bold">The opening tag</span>: consists of the name of the element (in this case, p), enclosed by opening and closing angle brackets (< >). Sets where the element begins or begins to take effect (in this case, where the beginning of the paragraph is)</li>
+              <li><span class="bold">The closing tag</span>: This is the same as the opening tag, except that it includes a slash (/) before the tag name. Sets where the element ends (in this case where the paragraph ends).</li>
+              <li>Attributes contain additional information about the element that you don't want to appear in the actual content of the element. Here "class" is the name of the attribute and ""feelings" is the value of the attribute. In this case, the class attribute allows you to give the element an identifying name, which can then be used to point the element to style information and so on. They are always included in the opening tag of an element, never in the closing tag.</li>
+              <li><span class="bold">The content</span>: This is the content of the element, which in this case is "I love cats"</li>
+              <li><span class="bold">The element</span>: the opening tag and the closing tag, plus the content equals the element.</li>
+            </ol>
+            <p>There are a lot of elements, such as heading elements, article, section, footer, tables, lists, images, video, etc.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Anatomy_of_a_HTML_Document">
+          <header>Anatomy of a HTML Document</header>
+          <article>Elements by themselves are not useful. These have to go within a certain structure for their proper functioning. Here is the most basic structure of an HTML file:
+            <pre><code>
+              < !DOCTYPE html>
+              < html lang="en-US">
+                < head>
+                  < meta charset="utf-8">
+                  < title>My test page< / title>
+                < / head>
+                < body>
+                  < h1 >This user loves cats and animals< / h1>
+                  < img src="https://metacode.biz/@test/avatar.jpg" alt="My test image">
+                < / body>
+              < / html>
+              </code></pre>
+              <p>We have the following:</p>
+              <ul>
+                <li>
+                  <span class="bold">< !DOCTYPE html >:</span> This line of code is just needed to make sure your document behaves correctly.
+                </li>
+                <li>
+                  <span class="bold">< html>< /html>:</span> This element wraps all the content on the entire page. Sometimes is known as the root element.
+                </li>
+                <li><span class="bold">< head>< /head>:</span> This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes keywords, a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.</li>
+                <li>
+                  <span class="bold">< meta charset="utf-8">:</span> This element sets the character set your document should use to UTF-8. This includes most characters from the vast majority of written languages. With this, it can handle any textual content you might put on it.
+                </li>
+                <li>
+                  <span class="bold">< title>< /title>:</span> This element sets the title of your page, which appears in the browser tab the page is loaded in.
+                </li>
+                <li>
+                  <span class="bold">< body>< /body>:</span> This contains all the content that you want to show on your pafe, whether that's text, images, videos, games, audio tracks, etc.
+                </li>
+              </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Images">
+          <header>Images</header>
+          <article>
+            <p>Let's take a look at:</p>
+            <pre>
+            <code>
+              < img src="https://metacode.biz/@test/avatar.jpg" alt="My test image">
+            </code>
+            </pre>
+              <p>This element embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image source.</p>
+              <p>We also have the "alt" attribute, which contains a short description of the image. It is useful in occasions where users can see the image either because:</p>
+              <ul>
+                <li>They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.</li>
+                <li>
+                  Something has gone wrong causing the image not to display. 
+                </li>
+              </ul> 
+          </article>
+        </section>
+        <section class="main-section" id="Links">
+          <header>Links</header>
+          <article>
+            <p>An HTML link is a resource that allows us to move from one page to another. We can add the hyperlink to many HTML elements, especially text or images. Here is the structure:</p>
+            <pre>
+              <code>
+                < a href="https://testlink.com">I'm a test link< /a>
+              </code>
+            </pre>
+            <p>The "href" attribute is used to store the link where the "a" element redirect us. There are many more attributes for the "a" element.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Lists">
+          <header>Lists</header>
+          <article>
+            <p>HTML has special elements for making lists. At least two elements are needed to make one. The most common list types are:</p>
+            <ul>
+              <li><span class="bold">Unordered Lists:</span> for lists where the order of the items doesn't matter. These are wrapped in a < ul> element.</li>
+              <li><span class="bold">Ordered Lists:</span> for lists where the order of the items matters. These are wrapped in an < ol> element.</li>
+            </ul>
+            <p>Here is the basic structure:</p>
+            <pre>
+              <code>
+                < ul>
+                  < li>A cat< /li>
+                  < li>A Dog< /li>
+                < /ul>
+              </code>
+            </pre>
+            <p>The element "li" is used to add list items to the list. This also works on ordered lists.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <article>
+            <p>All the documentation in this page is taken from <a href="https://developer.mozilla.org/es/docs/Web/HTML">MDN</a>.</p>
+          </article>
+        </section>
+      </main>
+</body>
+</html>
