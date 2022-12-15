@@ -17,3 +17,6 @@ The CSS for this project is used to style the page and make it responsive. Media
 ## Conclusion
 
 Overall, this project is a simple example of a responsive web page that can be used as a starting point for building more complex and feature-rich web applications. By using the techniques demonstrated in this project, developers can create web pages that are accessible, user-friendly, and easy to maintain.
+
+## Contact
+You can find me on [Twitter](https://twitter.com/ionuser03)
